@@ -1,3 +1,11 @@
+<!--
+ * @Author       : JIYONGFENG jiyongfeng@163.com
+ * @Date         : 2025-01-17 14:47:21
+ * @Description  :
+ * @LastEditTime : 2025-01-17 16:08:23
+ * @LastEditors  : JIYONGFENG jiyongfeng@163.com
+ * Copyright (c) 2025 by ZEZEDATA Technology CO, LTD, All Rights Reserved.
+-->
 # 🎈 Streamlit + LLM Examples App
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/llm-examples?quickstart=1)
@@ -43,8 +51,7 @@ OPENAI_API_KEY='xxxxxxxxxx'
 ## Run it locally
 
 ```sh
-virtualenv .venv
+uv sync
 source .venv/bin/activate
-pip install -r requirements.txt
 streamlit run Chatbot.py
 ```
