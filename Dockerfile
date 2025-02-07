@@ -21,8 +21,9 @@ ADD https://astral.sh/uv/install.sh /uv-installer.sh
 
 # Run the uv installer then remove it
 RUN sh /uv-installer.sh && rm /uv-installer.sh \
-    && uv sync --frozen \
-    && git clone https://github.com/jiyongfeng/llm-examples.git .
+    && git clone https://github.com/jiyongfeng/llm-examples.git . \
+    && uv sync --frozen
+
 
 EXPOSE 8501
 
